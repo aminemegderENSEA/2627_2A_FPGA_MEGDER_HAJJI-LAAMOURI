@@ -55,13 +55,6 @@ end architecture rtl;
 
 Schéma : une bascule D `r_led` dont la sortie est rebouclée sur l'entrée via un inverseur, avec un reset asynchrone.
 
-```mermaid
-flowchart LR
-    CLK[i_clk] --> DFF["Bascule D r_led"]
-    RST[i_rst_n] -->|reset| DFF
-    DFF --> OUT[o_led]
-    DFF --> INV((NOT)) --> DFF
-```
 
 ![RTL Viewer](images/schema.png)
 
@@ -121,13 +114,6 @@ end architecture rtl;
 
 Le compteur génère une impulsion toutes les 5 000 001 × 20 ns ≈ **100 ms**. La LED change d'état à chaque impulsion : elle clignote à environ **5 Hz**. Le compteur nécessite 23 bits.
 
-```mermaid
-flowchart LR
-    CLK[i_clk] --> CNT["Compteur 0 à 5 000 000"]
-    CNT -->|r_led_enable| LED["Bascule r_led"]
-    LED --> INV((NOT)) --> LED
-    LED --> OUT[o_led]
-```
 
 ![RTL Viewer diviseur](images/schema2.png)
 
@@ -202,12 +188,7 @@ begin
 end architecture rtl;
 ```
 
-```mermaid
-flowchart LR
-    CLK[i_clk] --> DIV[Diviseur]
-    DIV -->|r_enable| SR["Registre circulaire 10 bits"]
-    SR --> LEDS[LED0 à LED9]
-```
+
 
 | LED | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|---|---|---|---|---|---|---|---|---|
