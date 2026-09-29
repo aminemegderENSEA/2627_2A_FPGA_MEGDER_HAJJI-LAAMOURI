@@ -129,7 +129,7 @@ flowchart LR
     LED --> OUT[o_led]
 ```
 
-![RTL Viewer diviseur](images/11_rtl_diviseur.png)
+![RTL Viewer diviseur](images/schema2.png)
 
 Le RTL Viewer montre le compteur (additionneur, comparateur, registre) et la bascule `r_led` commandée par `r_led_enable`.
 
@@ -143,7 +143,6 @@ Le RTL Viewer montre le compteur (additionneur, comparateur, registre) et la bas
 
 **Q11 — Que signifie `_n` ?** Le signal est **actif à l'état bas** : le reset agit quand `i_rst_n = '0'`. Le bouton KEY0 est relié à une pull-up : il vaut `'1'` au repos et `'0'` à l'appui. Sur la carte, la LED reste éteinte tant que KEY0 est enfoncé.
 
-![LED clignotante](images/13_led_blink.gif)
 
 ---
 
