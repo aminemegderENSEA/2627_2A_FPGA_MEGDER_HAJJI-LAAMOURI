@@ -13,7 +13,6 @@ architecture rtl of led_blink is
     signal r_led        : std_logic := '0';
     signal r_led_enable : std_logic := '0';
 begin
-    -- Diviseur de fréquence : une impulsion toutes les ~100 ms
     process(i_clk, i_rst_n)
         variable counter : natural range 0 to 5000000 := 0;
     begin
@@ -31,7 +30,6 @@ begin
         end if;
     end process;
 
-    -- Bascule de la LED sur autorisation
     process(i_clk, i_rst_n)
     begin
         if (i_rst_n = '0') then
