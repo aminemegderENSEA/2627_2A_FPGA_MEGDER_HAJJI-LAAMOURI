@@ -63,7 +63,7 @@ flowchart LR
     DFF --> INV((NOT)) --> DFF
 ```
 
-![RTL Viewer](images/09_rtl_led_blink.png)
+![RTL Viewer](images/schema.png)
 
 Le RTL Viewer correspond au schéma : on retrouve la bascule et l'inverseur rebouclé.
 
