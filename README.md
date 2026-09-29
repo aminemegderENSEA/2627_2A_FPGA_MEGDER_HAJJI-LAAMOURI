@@ -33,8 +33,7 @@ end architecture rtl;
 | `pushl` | Bouton encodeur gauche | `PIN_AH27` |
 | `led0` | LED0 | `PIN_AG28` |
 
-![Pin Planner](images/03_pin_planner.png)
-![Programmer](images/04_programmer.png)
+![Programmer](images/programmer.png)
 
 ### Questions
 
