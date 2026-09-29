@@ -1,6 +1,6 @@
 # TP FPGA — Prise en main de Quartus Prime
 
-**Auteurs :** [Nom Prénom] — [Nom Prénom]  
+**Auteurs :** MEGDER Mohamed Al Amine — HAJJI Abdelmoughit  
 **Carte :** DE10-Nano (Cyclone V `5CSEBA6U23I7`) — **Logiciel :** Quartus Prime Lite 25.1
 
 ---
@@ -213,5 +213,5 @@ flowchart LR
 |---|---|---|---|---|---|---|---|---|---|---|
 | Broche | AG28 | AE25 | AG26 | AG25 | AG23 | AH21 | AF22 | AG20 | AG18 | AG15 |
 
-![RTL chenillard](images/16_rtl_chenillard.png)
-![Chenillard](images/17_chenillard.gif)
+![RTL chenillard](images/RTL_chenillard.png)
+![Chenillard](images/chenillard.mp4)
