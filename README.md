@@ -41,11 +41,6 @@ end architecture rtl;
 
 **Q10 — Correction :** le bouton est câblé avec une résistance de pull-up, il vaut `'1'` au repos et `'0'` à l'appui. On inverse donc l'entrée : `led0 <= not pushl;`
 
-| Bouton relâché | Bouton enfoncé |
-|---|---|
-| ![](images/06_led_off.jpg) | ![](images/07_led_on.jpg) |
-
----
 
 ## 2. Faire clignoter une LED
 
